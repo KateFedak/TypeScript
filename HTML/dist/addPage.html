@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Add Product</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Welcome to our shop</h1>
+        <a href="basket.html">
+          <img src="./img/bucket.png" alt="basket" />
+        </a>
+      </div>
+    </header>
+    <main class="page-body">
+      <div class="side-nav">
+        <a href="addPage.html">Add Item</a>
+        <a href="index.html"> All</a>
+      </div>
+      <div class="div-for-form">
+        <form id="formId">
+          <label for="pname">Product</label>
+          <input type="text" name="NameOfProduct" id="pname" /><br /><br />
+          <label for="pdescription">Description</label>
+          <input type="text" name="Description" id="pdescription" /><br /><br />
+          <label for="pprice">Price</label>
+          <input type="text" name="Price" id="pprice" /><br /><br />
+          <label for="pprice">Picture</label>
+          <input type="text" name="Picture" id="picture" /><br />
+          <input type="submit" id="addProduct" value="Submit" />
+          <input type="reset" value="Reset" />
+        </form>
+      </div>
+    </main>
+    <script src="./add.js"></script>
+  </body>
+</html>

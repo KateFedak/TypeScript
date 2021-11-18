@@ -1,0 +1,138 @@
+.page-body {
+  flex-grow: 1;
+}
+.container-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  margin: 30px;
+}
+.side-nav {
+  width: 200px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: lavender;
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin: 10px;
+  float: left;
+}
+.side-nav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+.side-nav a :hover {
+  color: #f1f1f1;
+}
+body {
+  font-family: #f1f1f1;
+  line-height: 2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body h2 {
+  text-align: center;
+}
+body ul {
+  padding: 0;
+}
+body ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+body a {
+  display: block;
+  color: #778899;
+}
+body form input[type="text"] {
+  width: 200px;
+  height: 20px;
+  margin: 10px;
+}
+body form input[type="submit"] {
+  width: 200px;
+  height: 20px;
+  margin: 10px;
+}
+body form input[type="reset"] {
+  width: 200px;
+  height: 20px;
+  margin: 10px;
+}
+body .div-for-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+header {
+  background-color: azure;
+}
+header h1 {
+  float: left;
+}
+header img {
+  float: right;
+  width: 60px;
+  height: 60px;
+}
+header label {
+  float: right;
+}
+.shopping-cart {
+  background: #ffffff;
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin-bottom: 5px;
+  flex-direction: column;
+}
+.shopping-cart .title {
+  height: 60px;
+  border-bottom: 1px solid #e1e8ee;
+  color: #5e6977;
+  font-size: 18px;
+  font-weight: 400;
+}
+.shopping-cart input[type="text"] {
+  width: 30px;
+  height: 30px;
+}
+.shopping-cart .item-bucket {
+  padding: 10px 10px;
+  display: flex;
+}
+.shopping-cart .delete-btn {
+  width: 18px;
+  height: 17px;
+  background-color: red;
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px;
+}
+.shopping-cart img {
+  margin-right: 10px;
+}
+.shopping-cart button[class*="btn"] {
+  width: 30px;
+  height: 30px;
+  background-color: #e1e8ee;
+  border-radius: 6px;
+  border: none;
+  margin: 10px;
+}
+.shopping-cart .backet-quantity {
+  padding-top: 60px;
+  margin: 30px;
+}
+.shopping-cart .total-price {
+  width: 100px;
+  text-align: center;
+  font-size: 16px;
+  color: #43484d;
+  font-weight: 300;
+}
