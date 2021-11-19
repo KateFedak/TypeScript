@@ -139,3 +139,7 @@ header label {
   color: #43484d;
   font-weight: 300;
 }
+.App {
+  display: flex;
+  flex-wrap: wrap;
+}

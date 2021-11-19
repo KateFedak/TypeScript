@@ -1,21 +1,21 @@
 import { Url } from "url";
 
-import {InsertProduct}  from  './InsertItems';
-import {AddToBucket}  from  './addToBacket';
-import {Item} from './InterfaceItems';
+import { InsertProduct } from "./InsertItems";
+import { AddToBucket } from "./addToBacket";
+import { Item } from "./InterfaceItems";
 
- export function doShowAll(){
+export function doShowAll() {
   InsertProduct();
 
-
   let keys = Object.keys(localStorage);
-  let params =new URL(document.location.toString()).searchParams;
+  let params = new URL(document.location.toString()).searchParams;
   let filter = params.get("filter");
+
   keys.forEach((it) => {
-    let items = JSON.parse(localStorage.getItem(it)as any);
+    let items = JSON.parse(localStorage.getItem(it) as any);
     items
-      .filter((item : Item) => !filter || item.category == filter)
-      .forEach((item:Item) => {
+      .filter((item: Item) => !filter || item.category == filter)
+      .forEach((item: Item) => {
         let element = document.createElement("div");
         element.classList.add("item");
         let img = document.createElement("img");
@@ -30,7 +30,7 @@ import {Item} from './InterfaceItems';
         price.textContent = item.price.toString();
         let button = document.createElement("button");
         button.setAttribute("id", it);
-        button.addEventListener("click", event => {
+        button.addEventListener("click", () => {
           AddToBucket(it);
         });
         if (sessionStorage[it] == null) {
@@ -46,7 +46,9 @@ import {Item} from './InterfaceItems';
         element.appendChild(category);
         element.appendChild(price);
         element.appendChild(button);
-        (document.querySelector(".container-items")as HTMLFormElement).appendChild(element);
+        (
+          document.querySelector(".container-items") as HTMLFormElement
+        ).appendChild(element);
       });
   });
 }

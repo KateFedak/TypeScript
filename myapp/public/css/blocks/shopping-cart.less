@@ -1,0 +1,56 @@
+// main: ../style.less
+.shopping-cart {
+  background: #ffffff;
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin-bottom: 5px;
+  flex-direction: column;
+
+  .title {
+    height: 60px;
+    border-bottom: 1px solid #e1e8ee;
+    color: #5e6977;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  input[type="text"] {
+    width: 30px;
+    height: 30px;
+  }
+  .item-bucket {
+    padding: 10px 10px;
+    display: flex;
+  }
+  .delete-btn {
+    width: 18px;
+    height: 17px;
+    background-color: red;
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  img {
+    margin-right: 10px;
+  }
+
+  button[class*="btn"] {
+    width: 30px;
+    height: 30px;
+    background-color: #e1e8ee;
+    border-radius: 6px;
+    border: none;
+    margin: 10px;
+  }
+  .backet-quantity {
+    padding-top: 60px;
+    margin: 30px;
+  }
+  .total-price {
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+    color: #43484d;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,45 @@
+// main: ../style.less
+body {
+  font-family: @primary-color-hover;
+  line-height: 2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    text-align: center;
+  }
+  ul {
+    padding: 0;
+    li {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+  a {
+    display: block;
+    color: #778899;
+  }
+  form {
+    input[type="text"] {
+      width: 200px;
+      height: 20px;
+      margin: 10px;
+    }
+
+    input[type="submit"] {
+      width: 200px;
+      height: 20px;
+      margin: 10px;
+    }
+    input[type="reset"] {
+      width: 200px;
+      height: 20px;
+      margin: 10px;
+    }
+  }
+  .div-for-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

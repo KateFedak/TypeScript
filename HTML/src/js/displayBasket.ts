@@ -1,19 +1,20 @@
-import {RemoveFromBasket}  from  './removeFromBasket';
-import {Item} from './InterfaceItems';
+import { RemoveFromBasket } from "./removeFromBasket";
+import { Item } from "./InterfaceItems";
 
 export function doShowBasket() {
   let keys = Object.keys(sessionStorage);
+
   keys.forEach((it) => {
     if (it != "IsThisFirstTime_Log_From_LiveServer") {
       let items = JSON.parse(sessionStorage.getItem(it) as any);
-      items.forEach((item:Item) => {
+      items.forEach((item: Item) => {
         let element = document.createElement("div");
         element.classList.add("item-Basket");
         element.setAttribute("id", it);
         let deleteSpan = document.createElement("span");
         deleteSpan.classList.add("delete-btn");
         deleteSpan.setAttribute("id", it);
-        deleteSpan.addEventListener("click", (event) => {
+        deleteSpan.addEventListener("click", () => {
           RemoveFromBasket(it);
         });
         let img = document.createElement("img");
@@ -36,7 +37,9 @@ export function doShowBasket() {
         element.appendChild(img);
         element.appendChild(divInfo);
         element.appendChild(divPrice);
-        (document.querySelector(".shopping-cart") as HTMLFormElement).appendChild(element);
+        (
+          document.querySelector(".shopping-cart") as HTMLFormElement
+        ).appendChild(element);
       });
     }
   });

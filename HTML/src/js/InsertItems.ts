@@ -1,5 +1,3 @@
-
-
 export function InsertProduct() {
   localStorage.setItem(
     "1",
